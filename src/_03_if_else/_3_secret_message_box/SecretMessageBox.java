@@ -26,8 +26,13 @@ public class SecretMessageBox {
 	//    if they can guess the passcode
 	String guess = JOptionPane.showInputDialog("You can only see the secret message if you can guess the passcode.");
 	// 4. If their guess matches the password, show them the secret message
+	if (guess.equalsIgnoreCase(password)) {
+		JOptionPane.showMessageDialog(null, message);
+	} else {
+		JOptionPane.showMessageDialog(null, "Inturder!");
+	}
+	//5. If the password does not match, pop-up "INTRUDER!!"
 	
-	// 5. If the password does not match, pop-up "INTRUDER!!"
 
 	}
 }
