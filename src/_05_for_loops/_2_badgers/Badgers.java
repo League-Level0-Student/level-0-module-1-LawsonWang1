@@ -26,7 +26,8 @@ public class Badgers {
 			System.out.println();
 
 		}
-
+		
+		    System.out.println("A Snake!!!");
 
 
 
